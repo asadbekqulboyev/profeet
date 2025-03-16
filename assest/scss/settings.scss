@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Muller';
+    src: url(../fonts/Muller-Trial-Regular.ttf);
+}
+@font-face {
+    font-family: 'Muller';
+    src: url(../fonts/Muller-Trial-Black.ttf);
+}
+@font-face {
+    font-family: 'Muller';
+    src: url(../fonts/Muller-Trial-Bold.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family:"Muller";
+color: #f1f7fa;
+
+}
+.section_title{
+    font-size: 44px;
+    letter-spacing: 2px;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: center;
+    span{
+    color: #66f1e6;
+    }
+}
+.text_light{
+color: #FFF;
+}
+.text_24{
+color:#FFF;
+text-align: center;
+font-family: 'Montserrat';
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+&._400{
+font-weight: 400;
+}
+}
