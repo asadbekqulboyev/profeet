@@ -1,3 +1,4 @@
+@import '../fonts/style.css';
 @font-face {
   font-family: "Muller Regular";
   src: url(../fonts/Muller-Trial-Regular.ttf);
@@ -10,13 +11,107 @@
   font-family: "Muller";
   src: url(../fonts/Muller-Trial-Bold.ttf), format("truetype");
 }
+.price {
+  padding-top: 160px;
+}
+.price .price_items {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+.price .price_item {
+  width: calc(25% - 39px);
+}
+.price .price_item .price_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.price .price_item .price_img::after {
+  content: "";
+  width: 90px;
+  height: 90px;
+  display: block;
+  border-radius: 50%;
+  background-color: #1f7d79;
+}
+.price .price_item .price_img h3 {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  font-size: 18px;
+  letter-spacing: 2px;
+  height: fit-content;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #f1f7fa;
+  font-weight: bold;
+  text-align: center;
+}
+.price .price_item .price_description {
+  font-size: 20px;
+  line-height: 32px;
+  color: #f1f7fa;
+  font-family: "Muller Regular";
+  text-align: center;
+  margin-top: 20px;
+}
+
+.multimedia {
+  padding-top: 160px;
+}
+.multimedia .multimedia_slides {
+  position: relative;
+  padding: 0 115px;
+  margin-top: 51px;
+}
+.multimedia .multimedia_slides .swiper-slide img {
+  width: 100%;
+  object-fit: contain;
+}
+.multimedia .sldie_btns {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  left: 0;
+  padding: 0 15px;
+}
+.multimedia .sldie_btns .slide_btn {
+  user-select: none;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  background: #1f7d79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.multimedia .sldie_btns .slide_btn.prev img {
+  transform: rotate(-45deg);
+}
+.multimedia .sldie_btns .slide_btn.next img {
+  transform: rotate(135deg);
+}
+.multimedia .swiper-wrapper {
+  overflow: hidden;
+}
+
 .numbers {
   background: #1D8A8A;
   padding: 120px 0px;
 }
 .numbers .numbers_list {
   display: flex;
-  gap: 20px;
+  gap: 14px;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 75px;
@@ -25,11 +120,15 @@
   background: #d4dcde;
   width: 100%;
   border-radius: 12px;
-  padding: 20px 10px;
+  padding: 20px 10px 80px;
   max-width: 285px;
   text-align: center;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 .numbers .numbers_item::before {
   content: "";
@@ -72,11 +171,14 @@
 }
 .numbers .numbers_value {
   font-size: 66px;
-  line-height: 34px;
   color: #035758;
   font-weight: bold;
   margin-top: auto;
+  font-family: "D-DIN Regular";
   margin-bottom: 0;
+}
+.numbers .numbers_value span {
+  font-family: "D-DIN Regular";
 }
 
 footer {
@@ -199,15 +301,26 @@ body {
   background: #278b87;
 }
 
+li {
+  list-style: none;
+}
+
 .section_title {
   font-size: 44px;
   letter-spacing: 2px;
   line-height: 58px;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Muller Regular";
+  font-weight: 200;
 }
 .section_title span {
   color: #66f1e6;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
 .text_light {
@@ -225,4 +338,21 @@ body {
 }
 .text_24._400 {
   font-weight: 400;
+}
+
+.reabilitation {
+  padding-top: 160px;
+}
+.reabilitation .reabilitation_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 55px;
+  margin-top: 55px;
+}
+.reabilitation .reabilitation_content p {
+  font-size: 24px;
+  line-height: 38px;
+  color: #f1f7fa;
+  font-family: "Muller Regular";
 }/*# sourceMappingURL=settings.css.map */

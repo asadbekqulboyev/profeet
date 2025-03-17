@@ -1,10 +1,11 @@
 $(document).ready(function () {
     // madia swiper 
-    new Swiper('.mySwiper1', {
-
+    let multimedia = new Swiper('.multimedia_slides', {
+        slidesPerView:3,
+        spaceBetween:15,
         navigation: {
-             nextEl: '.next1', 
-             prevEl: '.prev1'
+             prevEl: '.slide_btn.next', 
+             nextEl: '.slide_btn.prev'
         },
         loop: true
     });

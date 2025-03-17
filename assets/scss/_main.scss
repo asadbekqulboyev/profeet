@@ -1,0 +1,101 @@
+.price{
+    padding-top: 160px;
+    .price_items{
+        display: flex;
+        justify-content:space-between;
+        padding-top: 80px;
+    }
+    .price_item{
+        width: calc(25% - 39px);
+        .price_img{
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            position: relative;
+            &::after{
+                content: '';
+                width: 90px;
+                height: 90px;
+                display: block;
+                border-radius: 50%;
+                background-color: #1f7d79;
+            }
+            h3{
+                position: absolute;
+                inset: 0;
+                margin: auto;
+                font-size: 18px;
+                letter-spacing: 2px;
+                height: fit-content;
+                line-height: 32px;
+                text-transform: uppercase;
+                color: #f1f7fa;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+        .price_description{
+            font-size: 20px;
+            line-height: 32px;
+            color: #f1f7fa;
+            font-family: "Muller Regular";
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}
+// multimedia
+.multimedia{
+    padding-top: 160px;
+    .multimedia_slides {
+        position: relative;
+        padding:0 115px;
+        margin-top: 51px;
+        .swiper-slide{
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    .sldie_btns{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        left:0;
+        padding: 0 15px;
+        .slide_btn {
+            user-select: none;
+            z-index: 3;
+            width: 70px;
+            height: 70px;
+            position: relative;
+            background: #1f7d79;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(45deg);
+            cursor: pointer;
+            &.prev{
+                img{
+
+                    transform: rotate(-45deg);
+                }
+            }
+            &.next{
+                img{
+
+                    transform: rotate(135deg);
+                }
+            }
+        }
+    }
+    .swiper-wrapper{
+        overflow: hidden;
+    }
+}

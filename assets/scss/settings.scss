@@ -10,6 +10,8 @@
     font-family: 'Muller';
     src: url(../fonts/Muller-Trial-Bold.ttf) ,format('truetype');
 }
+@import '../fonts/style.css';
+@import 'main';
 @import './numbers';
 @import 'footer';
 *{
@@ -22,15 +24,24 @@ font-family:"Muller";
 color: #f1f7fa;
 background: #278b87;
 }
+li{
+    list-style: none;
+}
 .section_title{
     font-size: 44px;
     letter-spacing: 2px;
     line-height: 58px;
     text-transform: uppercase;
     text-align: center;
+    font-family: 'Muller Regular';
+    font-weight: 200;
     span{
     color: #66f1e6;
     }
+}
+.container{
+    max-width:1260px;
+    margin: 0 auto;
 }
 .text_light{
 color: #FFF;
@@ -46,4 +57,20 @@ line-height: normal;
 &._400{
 font-weight: 400;
 }
+}
+.reabilitation{
+    padding-top:160px;
+    .reabilitation_content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+        margin-top: 55px;
+        p{
+            font-size: 24px;
+    line-height: 38px;
+    color: #f1f7fa;
+    font-family: "Muller Regular";
+        }
+    }
 }
