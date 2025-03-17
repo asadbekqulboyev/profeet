@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Muller Regular";
+  src: url(../fonts/Muller-Trial-Regular.ttf);
+}
+@font-face {
+  font-family: "Muller Black";
+  src: url(../fonts/Muller-Trial-Black.ttf);
+}
+@font-face {
+  font-family: "Muller";
+  src: url(../fonts/Muller-Trial-Bold.ttf), format("truetype");
+}
+.numbers {
+  background: #1D8A8A;
+  padding: 120px 0px;
+}
+.numbers .numbers_list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 75px;
+}
+.numbers .numbers_item {
+  background: #d4dcde;
+  width: 100%;
+  border-radius: 12px;
+  padding: 20px 10px;
+  max-width: 285px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.numbers .numbers_item::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 20px;
+  background: #1D8A8A;
+  border-radius: 50%;
+}
+.numbers .numbers_icon {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #278b87;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.numbers .numbers_icon img {
+  width: 52px;
+  height: auto;
+}
+.numbers .numbers_label {
+  color: #2A4A4A;
+  margin-top: 70px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: #259393;
+  font-weight: 800;
+  font-family: "Muller Black";
+  text-align: center;
+}
+.numbers .numbers_value {
+  font-size: 66px;
+  line-height: 34px;
+  color: #035758;
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+footer {
+  padding: 90px 0 160px;
+  background: radial-gradient(circle, #136c75, #072e36);
+  font-family: "Muller Regular";
+}
+footer .section_title {
+  color: #579c96;
+}
+footer .footer_item {
+  position: relative;
+  padding-bottom: 40px;
+}
+footer .footer_item::after {
+  content: "";
+  width: 161px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto 0;
+  background: #368283;
+}
+footer .footer_item p {
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #4d9091;
+  text-align: center;
+}
+footer .footer_item a {
+  color: #b8e0f2;
+  text-decoration: none;
+}
+footer .footer_item .inn {
+  margin-top: 36px;
+  text-align: center;
+}
+footer .footer_item .owner {
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: center;
+}
+footer .footer_item .address {
+  font-size: 24px;
+  line-height: 21px;
+  color: #84c4c4;
+  text-align: center;
+  margin-top: 40px;
+}
+footer .footer_item .phone,
+footer .footer_item .email,
+footer .footer_item .map {
+  text-align: center;
+  display: block;
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 0;
+  color: #84c4c4;
+  text-align: center;
+  margin-top: 20px;
+}
+footer .footer_item .phone a,
+footer .footer_item .email a,
+footer .footer_item .map a {
+  text-decoration: underline;
+  color: #84c4c4;
+}
+footer .footer_bottom ul:first-child {
+  margin-top: 20px;
+  text-align: center;
+}
+footer .footer_bottom ul:first-child li {
+  font-size: 19px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #84c4c4;
+  font-family: "Muller Regular";
+  text-align: center;
+  margin-top: 25px;
+}
+footer .footer_bottom ul.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 50px;
+}
+footer .footer_bottom ul.social li {
+  list-style: none;
+}
+footer .footer_bottom ul.social a {
+  border-radius: 50%;
+  display: flex;
+  width: 54px;
+  height: 54px;
+  align-items: center;
+  justify-content: center;
+  background: #bfeae9;
+}
+footer .footer_bottom ul.social a img {
+  width: 35px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muller";
+  color: #f1f7fa;
+  background: #278b87;
+}
+
+.section_title {
+  font-size: 44px;
+  letter-spacing: 2px;
+  line-height: 58px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section_title span {
+  color: #66f1e6;
+}
+
+.text_light {
+  color: #FFF;
+}
+
+.text_24 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.text_24._400 {
+  font-weight: 400;
+}/*# sourceMappingURL=settings.css.map */

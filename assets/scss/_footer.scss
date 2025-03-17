@@ -1,0 +1,120 @@
+footer {
+    padding: 90px 0 160px;
+    background: radial-gradient(circle, #136c75,  #072e36);
+    font-family: 'Muller Regular';
+
+    .section_title {
+
+        color: #579c96;
+    }
+
+    .footer_item {
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 161px;
+            height: 3px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto 0;
+            background: #368283;
+        }
+
+        p {
+            text-align: center;
+            font-size: 19px;
+            letter-spacing: 2px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: #4d9091;
+            text-align: center;
+        }
+
+        padding-bottom:40px;
+
+        a {
+            color: #b8e0f2;
+            text-decoration: none;
+        }
+
+        .inn {
+            margin-top: 36px;
+            text-align: center;
+        }
+
+        .owner {
+            font-size: 19px;
+            letter-spacing: 2px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .address {
+            font-size: 24px;
+            line-height: 21px;
+            color: #84c4c4;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .phone,
+        .email,
+        .map {
+            text-align: center;
+            display: block;
+            font-size: 24px;
+            line-height: 21px;
+            font-weight: 0;
+            color: #84c4c4;
+            text-align: center;
+            margin-top: 20px;
+            a{
+                text-decoration: underline;
+                color: #84c4c4;
+            }
+        }
+       
+    }
+    .footer_bottom{
+        ul:first-child{
+            margin-top: 20px;
+            text-align: center;
+            li {
+                font-size: 19px;
+                letter-spacing: 2px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #84c4c4;
+                font-family: "Muller Regular";
+                text-align: center;
+                margin-top: 25px;
+            }
+        }
+        ul.social{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 50px;   
+            li{
+                list-style: none;
+            }
+            a{
+                border-radius: 50%;
+                display: flex;
+                width: 54px;
+                height: 54px;   
+                align-items: center;
+                justify-content: center;
+                background: #bfeae9;
+
+                img{
+                    width:35px ;
+                }
+            }
+        }
+    }
+}

@@ -4,27 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
 </head>
 <body>
     <div class="wrapper">
-        <!-- header -->
-         <header class="header">
-            
-         </header>
          <main>
             <section class="hero">
                 <container>
                     
                 </container>
             </section>
-            <!-- section. -->
+            <section class="statistics">
+            </section>
+            <section class="numbers">
+                <h2 class="section_title">
+                    <span>мы </span> в цифрах
+                </h2>
+                <div class="numbers_list">
+                    <div class="numbers_item">
+                        <div class="numbers_icon">
+                            <img src="assets/images/numbers_icon1.svg" alt="Клиенты">
+                        </div>
+                        <p class="numbers_label">с 2013 года клиентов</p>
+                        <span class="numbers_value"> <span class="count" data-target="14273">14 273</span></span>
+                    </div>
+                    <div class="numbers_item">
+                        <div class="numbers_icon">
+                            <img src="assets/images/numbers_icon2.svg" alt="Материалы">
+                        </div>
+                        <p class="numbers_label">израсходовано материалов</p>
+                        <span class="numbers_value"> <span class="count" data-target="3670">3 670</span>м²</span>
+                    </div>
+                    <div class="numbers_item">
+                        <div class="numbers_icon">
+                            <img src="assets/images/numbers_icon3.svg" alt="Стелек">
+                        </div>
+                        <p class="numbers_label">стелек в год</p>
+                        <span class="numbers_value count" data-target="1175">1 175</span>
+                    </div>
+                </div>
+            </section>
+            
          </main>
-         <footer>
+         <footer class="footer">
             <div class="container">
                 <h2 class="section_title">Контакты</h2>
-                
+                <div class="footer_items">
+                    <div class="footer_item">
+                        <p class="inn">ИНН 745300781951</p>
+                        <p class="owner">ИП ПРИСТАВКО ТАТЬЯНА АНАТОЛЬЕВНА</p>
+                    </div>
+                    <div class="footer_item">
+                        <div class="address">Челябинск, ул. Блюхера 53 (цоколь)</div>
+                        <a href="tel:83512744080" class="phone">8 (351) 274-40-80</a>
+                        <a href="mailto:profeet174@mail.ru" class="email">profeet174@mail.ru</a>
+                        <div class="map">Как добраться - <a href="#">см. на Яндекс Карте</a></div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <ul>
+                        <li class="schedule">РЕЖИМ РАБОТЫ ПО ПРЕДВАРИТЕЛЬНОЙ ЗАПИСИ</li>
+                        <li class="time">пн–пт с 10:00 до 19:00</li>
+                        <li class="time">сб с 10:00 до 16:00</li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href=""><img src="assets/images/vk.svg" alt=""></a></li>
+                        <li><a href=""><img src="assets/images/whatsapp.svg" alt=""></a></li>
+                    </ul>
+                </div>
             </div>
          </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/pro.js"></script>
 </body>
 </html>

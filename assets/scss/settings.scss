@@ -1,15 +1,17 @@
 @font-face {
-    font-family: 'Muller';
+    font-family: 'Muller Regular';
     src: url(../fonts/Muller-Trial-Regular.ttf);
 }
 @font-face {
-    font-family: 'Muller';
+    font-family:"Muller Black";
     src: url(../fonts/Muller-Trial-Black.ttf);
 }
 @font-face {
     font-family: 'Muller';
-    src: url(../fonts/Muller-Trial-Bold.ttf);
+    src: url(../fonts/Muller-Trial-Bold.ttf) ,format('truetype');
 }
+@import './numbers';
+@import 'footer';
 *{
     margin: 0;
     padding: 0;
