@@ -1,35 +1,91 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import '../fonts/style.css';
 .comments .reviews {
+  margin-top: 40px;
   display: flex;
   background: white;
-  padding: 20px;
+  padding: 30px 20px 80px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   width: 100%;
 }
+.comments .gic2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 56px;
+  gap: 20px;
+  color: #000;
+}
+.comments .gic2 img {
+  width: 20px;
+}
+.comments .gic2 span {
+  background: linear-gradient(to right, #1c7c7c, #2b6ea3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 12px;
+  font-family: "Muller Regular";
+}
+.comments .navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.comments .navigation .navigation_btn {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.comments .navigation .navigation_btn .btn_nav {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2862745098);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.comments .navigation .navigation_btn .btn_nav img {
+  width: 12px;
+}
+.comments .navigation .navigation_btn .btn_nav.prev {
+  transform: rotate(180deg);
+}
 .comments .reviews__rating {
   width: 200px;
   padding-right: 20px;
-  border-right: 2px solid #ddd;
   text-align: center;
+  font-family: "Muller Regular";
+}
+.comments .reviews__rating p {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #000;
 }
 .comments .reviews__score {
-  font-size: 24px;
-  font-weight: bold;
+  font-family: "Muller Regular";
+  font-size: 26px;
+  color: #000;
 }
 .comments .reviews__stars {
   color: gold;
   font-size: 20px;
 }
 .comments .reviews__btn {
-  background: #007aff;
-  color: white;
-  padding: 10px;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  width: 100%;
+  display: block;
   border: none;
-  border-radius: 5px;
+  text-decoration: none;
+  border-radius: 15px;
   cursor: pointer;
   margin-top: 10px;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.0862745098);
 }
 .comments .swiper-container {
   flex: auto;
@@ -37,6 +93,7 @@
   width: 100%;
   padding-left: 20px;
   padding-bottom: 80px;
+  padding-top: 10px;
 }
 .comments .review {
   background: white;
@@ -44,9 +101,35 @@
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+.comments .review p {
+  color: #000;
+  font-family: "Muller Regular";
+  margin-top: 27px;
+}
+.comments .review a {
+  font-family: "Muller Regular";
+  color: #000;
+  padding-top: 20px;
+  display: block;
+}
 .comments .review__user {
   display: flex;
   align-items: center;
+  color: #000;
+  font-family: "Muller Regular";
+}
+.comments .review__user strong {
+  font-size: 14px;
+  line-height: 0.9;
+}
+.comments .review__user div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.comments .review__user div .reviews__stars {
+  line-height: normal;
+  font-size: 12px;
 }
 .comments .review__user img {
   width: 40px;
@@ -58,7 +141,7 @@
   width: 100%;
   height: 4px;
   background: #ddd;
-  margin-top: 10px;
+  margin-top: 0px;
   position: relative;
 }
 .comments .swiper-progress {
@@ -127,15 +210,26 @@
   bottom: 140px;
   z-index: 2;
 }
+@media (max-width: 1400px) {
+  .hero .hero_btn_lists {
+    bottom: 90px;
+  }
+}
 .hero .hero_btn_lists .slide_btn {
   width: 80px;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #f3e1d2;
+  background: #f5e3d2;
   transform: rotate(45deg);
   cursor: pointer;
+}
+@media (max-width: 1400px) {
+  .hero .hero_btn_lists .slide_btn {
+    width: 65px;
+    height: 65px;
+  }
 }
 .hero .hero_btn_lists .slide_btn img {
   transform: rotate(132deg);
@@ -182,6 +276,12 @@
   font-weight: 500;
   font-family: "Muller Medium";
 }
+@media (max-width: 1400px) {
+  .hero .hero_content .title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
 .hero .hero_content .dscription {
   max-width: 680px;
   font-size: 22px;
@@ -207,6 +307,11 @@
 .hero .hero_content .hero_img {
   width: 100%;
   object-fit: contain;
+}
+@media (max-width: 1200px) {
+  .hero .hero_content .hero_img {
+    width: 125%;
+  }
 }
 
 .static_analysis {
@@ -431,6 +536,7 @@ footer {
   padding: 90px 0 160px;
   background: radial-gradient(circle, #136c75, #072e36);
   font-family: "Muller Regular";
+  margin-top: 124px;
 }
 footer .section_title {
   color: #579c96;
@@ -571,6 +677,12 @@ li {
 .container {
   max-width: 1260px;
   margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+  }
 }
 
 .text_light {

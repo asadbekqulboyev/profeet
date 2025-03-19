@@ -55,6 +55,10 @@ li{
 .container{
     max-width:1260px;
     margin: 0 auto;
+    padding: 0 10px;
+    @media (max-width:1200px) {
+        max-width: 992px;
+    }
 }
 .text_light{
 color: #FFF;
