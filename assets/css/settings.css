@@ -1,5 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import '../fonts/style.css';
+.comments .reviews {
+  display: flex;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.comments .reviews__rating {
+  width: 200px;
+  padding-right: 20px;
+  border-right: 2px solid #ddd;
+  text-align: center;
+}
+.comments .reviews__score {
+  font-size: 24px;
+  font-weight: bold;
+}
+.comments .reviews__stars {
+  color: gold;
+  font-size: 20px;
+}
+.comments .reviews__btn {
+  background: #007aff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.comments .swiper-container {
+  flex: auto;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 80px;
+}
+.comments .review {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.comments .review__user {
+  display: flex;
+  align-items: center;
+}
+.comments .review__user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.comments .swiper-progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #ddd;
+  margin-top: 10px;
+  position: relative;
+}
+.comments .swiper-progress {
+  height: 100%;
+  background: #007aff;
+  width: 0;
+  transition: width 0.3s ease;
+}
+
 @font-face {
   font-family: "Muller Regular";
   src: url(../fonts/Muller-Trial-Regular.ttf);
@@ -68,6 +136,12 @@
   background: #f3e1d2;
   transform: rotate(45deg);
   cursor: pointer;
+}
+.hero .hero_btn_lists .slide_btn img {
+  transform: rotate(132deg);
+}
+.hero .hero_btn_lists .slide_btn.next img {
+  transform: rotate(-45deg);
 }
 .hero .hero_btn_lists .slide_btn img {
   width: 16px;

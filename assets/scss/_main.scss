@@ -49,6 +49,14 @@
                 transform: rotate(45deg);
                 cursor: pointer;
                 img{
+                    transform: rotate(132deg);
+                }
+                &.next{
+                    img{
+                        transform: rotate(-45deg);
+                    }
+                }
+                img{
                     width: 16px;
                 }
             }
