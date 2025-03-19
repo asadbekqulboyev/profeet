@@ -1,5 +1,6 @@
 $(document).ready(function () {
     // madia swiper 
+   
     let multimedia = new Swiper('.multimedia_slides', {
         slidesPerView:3,
         spaceBetween:15,
@@ -9,6 +10,25 @@ $(document).ready(function () {
         },
         loop: true
     });
+    if($('.hero_slide').length){
+
+        const hero_slider = new Swiper('.hero_slide',{
+            // effect:'fade',
+            loop:true,
+            speed: 1000,
+            autoplay:{
+                speed:9000,
+            },
+            navigation: {
+                prevEl: '.slide_btn.next', 
+                nextEl: '.slide_btn.prev'
+           },
+           pagination: {
+            el: '.swiper-pagination',  // Pagination element
+            clickable: true  // Foydalanuvchi bosishi mumkin
+        },
+        });
+    }
     // sifr
     let started = false;
     

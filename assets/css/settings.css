@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import '../fonts/style.css';
 @font-face {
   font-family: "Muller Regular";
@@ -11,6 +12,177 @@
   font-family: "Muller";
   src: url(../fonts/Muller-Trial-Bold.ttf), format("truetype");
 }
+@font-face {
+  font-family: "Muller Medium";
+  src: url(../fonts/Muller-Trial-Medium.ttf);
+}
+@font-face {
+  font-family: "Muller Light";
+  src: url(../fonts/Muller-Trial-Light.ttf);
+}
+.hero .logo {
+  padding-left: 65px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.hero .swiper-horizontal > .swiper-pagination-bullets, .hero .swiper-pagination-bullets.swiper-pagination-horizontal, .hero .swiper-pagination-custom, .hero .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: auto;
+  width: fit-content;
+  top: -20px;
+  bottom: 0;
+  gap: 22px;
+  align-items: end;
+  right: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+}
+.hero .swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background: transparent;
+  border: 2px solid #fff;
+  opacity: 1;
+}
+.hero .swiper-pagination-clickable .swiper-pagination-bullet-active {
+  border-color: #139090;
+  background: #139090;
+}
+.hero .hero_btn_lists {
+  display: flex;
+  gap: 48px;
+  position: absolute;
+  bottom: 140px;
+  z-index: 2;
+}
+.hero .hero_btn_lists .slide_btn {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3e1d2;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.hero .hero_btn_lists .slide_btn img {
+  width: 16px;
+}
+.hero .content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+.hero .hero_content {
+  position: relative;
+}
+.hero .hero_content .hero_left {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 160px;
+  justify-content: space-between;
+}
+.hero .hero_content .top_title {
+  font-size: 20px;
+  letter-spacing: 5px;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: #1c80c5;
+  font-weight: 500;
+  font-family: "Muller Medium";
+}
+.hero .hero_content .title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 811px;
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 58px;
+  text-transform: uppercase;
+  color: #44a1a3;
+  font-weight: 500;
+  font-family: "Muller Medium";
+}
+.hero .hero_content .dscription {
+  max-width: 680px;
+  font-size: 22px;
+  line-height: 100%;
+  color: #197980;
+  font-weight: 300;
+  font-family: "Muller Light";
+}
+.hero .hero_content .button {
+  text-decoration: none;
+  padding: 0 27px;
+  border-radius: 15px;
+  background-color: #139090;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 70px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+  margin-bottom: -65px;
+}
+.hero .hero_content .hero_img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.static_analysis {
+  padding-top: 120px;
+}
+.static_analysis .section_title {
+  margin-bottom: 45px;
+}
+.static_analysis .section_title.bottom {
+  margin-top: 100px;
+}
+.static_analysis .static_analysis_item {
+  display: flex;
+  justify-content: space-between;
+}
+.static_analysis .static_analysis_item .static_analysis_info {
+  width: calc(49% - 50px);
+}
+.static_analysis .static_analysis_item .static_analysis_info .static_analysis_info_top {
+  width: 190px;
+  height: 8px;
+  background: #71c5c4;
+  margin-bottom: 40px;
+  margin-left: auto;
+}
+.static_analysis .static_analysis_item .static_analysis_info .static_analysis_info_top span {
+  display: block;
+  width: 40%;
+  height: 100%;
+  background: #d0e0e0;
+}
+.static_analysis .static_analysis_item .static_analysis_info p {
+  font-size: 24px;
+  line-height: 38px;
+  color: #f2f8fb;
+  font-family: "Muller Regular";
+  padding-right: 40px;
+}
+.static_analysis .static_analysis_item img {
+  width: calc(51% - 50px);
+}
+.static_analysis .static_analysis_item.bottom .static_analysis_info_top {
+  margin-right: auto;
+  margin-left: 0;
+}
+.static_analysis .static_analysis_item.bottom p {
+  padding-left: 40px;
+  text-align: left;
+}
+
 .price {
   padding-top: 160px;
 }
@@ -293,6 +465,10 @@ footer .footer_bottom ul.social a img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 body {
